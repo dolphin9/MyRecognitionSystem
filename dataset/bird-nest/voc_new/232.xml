@@ -1,0 +1,26 @@
+<annotation>
+	<folder>nest</folder>
+	<filename>232.jpg</filename>
+	<path>/home/dolphin9/code/Yolo3/keras-yolo3/image/nest/232.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>820</width>
+		<height>1024</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>bird-nest</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>184</xmin>
+			<ymin>466</ymin>
+			<xmax>656</xmax>
+			<ymax>1024</ymax>
+		</bndbox>
+	</object>
+</annotation>

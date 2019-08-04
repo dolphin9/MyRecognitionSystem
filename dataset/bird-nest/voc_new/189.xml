@@ -1,0 +1,26 @@
+<annotation>
+	<folder>image</folder>
+	<filename>189.jpg</filename>
+	<path>/home/dolphin9/code/Yolo3/bird-nest/image/189.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>480</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>bird-nest</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>7</xmin>
+			<ymin>100</ymin>
+			<xmax>475</xmax>
+			<ymax>640</ymax>
+		</bndbox>
+	</object>
+</annotation>

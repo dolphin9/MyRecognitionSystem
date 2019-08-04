@@ -1,0 +1,3 @@
+/media/dolphin9/文件/code/Yolo3/bird-nest/image/57.jpg 693,519,833,635,2
+/media/dolphin9/文件/code/Yolo3/bird-nest/image/78.jpg 109,57,141,82,2
+/media/dolphin9/文件/code/Yolo3/bird-nest/image/198.jpg 407,117,913,670,2

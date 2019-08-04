@@ -1,0 +1,26 @@
+<annotation>
+	<folder>JPEGImages</folder>
+	<filename>17.jpg</filename>
+	<path>/media/dolphin9/文件/code/Yolo3/keras-yolo3/VOCdevkit/VOC2007/JPEGImages/17.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>320</width>
+		<height>320</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>bird-nest</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>122</xmin>
+			<ymin>67</ymin>
+			<xmax>187</xmax>
+			<ymax>121</ymax>
+		</bndbox>
+	</object>
+</annotation>
