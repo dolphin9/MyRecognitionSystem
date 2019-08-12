@@ -1,0 +1,26 @@
+<annotation>
+	<folder>kite_new</folder>
+	<filename>1006.jpg</filename>
+	<path>/media/dolphin9/文件/code/MyRecognitionSystem/dataset/kite_new/1006.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>173</width>
+		<height>280</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>kite</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>98</xmin>
+			<ymin>38</ymin>
+			<xmax>163</xmax>
+			<ymax>78</ymax>
+		</bndbox>
+	</object>
+</annotation>
