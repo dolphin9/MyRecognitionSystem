@@ -6,7 +6,7 @@ traindir = './train'
 print ("traindir = %s" % traindir)
 trainfiles = os.listdir(traindir)
 
-jpgdir = './kite'
+jpgdir = './jpg'
 print ("jpgdir = %s" % jpgdir)
 jpgfiles = os.listdir(jpgdir)
 
@@ -20,19 +20,20 @@ kitefiles = os.listdir(kitedir)
 
 
 # 输出所有文件和文件夹
-for file in trainfiles:
-    if file[-3:] == 'jpg':
-       os.rename(traindir+'/'+file,jpgdir+'/'+file)
-    else:
-       os.rename(traindir+'/'+file,txtdir+'/'+file)
+#for file in trainfiles:
+#    if file[-3:] == 'jpg':
+#       os.rename(traindir+'/'+file,jpgdir+'/'+file)
+#    else:
+#       os.rename(traindir+'/'+file,txtdir+'/'+file)
        
-#for jpgfile in jpgfiles:
-#        for txtfile in txtfiles:
-#                if jpgfile[:-4] == txtfile[:-4]:
-#                      os.rename(jpgdir+'/'+jpgfile,traindir+'/'+jpgfile)
-#                      os.rename(txtdir+'/'+txtfile,traindir+'/'+txtfile)
-#                      continue
-#        pass
+for jpgfile in jpgfiles:
+        for txtfile in txtfiles:
+                if jpgfile[:-4] == txtfile[:-4]:
+                      os.rename(jpgdir+'/'+jpgfile,traindir+'/'+jpgfile)
+                      os.rename(txtdir+'/'+txtfile,traindir+'/'+txtfile)
+                      continue
+        pass
+
 #for txtfile in trainfiles:
 #        for jpgfile in jpgfiles:
 #                if jpgfile[:-4] == txtfile[:-4]:
