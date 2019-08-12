@@ -20,11 +20,11 @@ kitefiles = os.listdir(kitedir)
 
 
 # 输出所有文件和文件夹
-#for file in dirs:
-#    if file[-3:] == 'jpg':
-#       os.rename(traindir+'/'+file,jpgdir+'/'+file)
-#    else:
-#       os.rename(traindir+'/'+file,txtdir+'/'+file)
+for file in trainfiles:
+    if file[-3:] == 'jpg':
+       os.rename(traindir+'/'+file,jpgdir+'/'+file)
+    else:
+       os.rename(traindir+'/'+file,txtdir+'/'+file)
        
 #for jpgfile in jpgfiles:
 #        for txtfile in txtfiles:
@@ -45,10 +45,10 @@ kitefiles = os.listdir(kitedir)
 #                                if os.path.isfile(filename2):
 #                                       print ('copy file success')
                                         
-for jpgfile in kitefiles:
-        txtfile = jpgfile[:-4] + '.txt'
-        if txtfile in kitefiles:
-                pass
-        else:
-                os.rename(kitedir+'/'+jpgfile,'./kite_new'+jpgfile)
-                print(jpgfile)
+#for jpgfile in kitefiles:
+#        txtfile = jpgfile[:-4] + '.txt'
+#        if txtfile in kitefiles:
+#                pass
+#        else:
+#                os.rename(kitedir+'/'+jpgfile,'./kite_new'+jpgfile)
+#                print(jpgfile)
