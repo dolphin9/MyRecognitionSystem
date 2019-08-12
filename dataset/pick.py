@@ -34,22 +34,22 @@ kitefiles = os.listdir(kitedir)
 #                      continue
 #        pass
 
-for txtfile in trainfiles:
-    if txtfile[-3:] == 'txt':
-        jpgfile = txtfile[:-4] + '.jpg'
-        if jpgfile in kitefiles:
-            filename1 = traindir+ '/' + txtfile
-            #print(filename1)
-            filename2 = kitedir + '/' + txtfile
-            #print(filename2)
-            os.system('cp %s %s' % (filename1, filename2)) 
-            if os.path.isfile(filename2):
-                print ('copy file success')
+#for txtfile in trainfiles:
+#    if txtfile[-3:] == 'txt':
+#        jpgfile = txtfile[:-4] + '.jpg'
+#        if jpgfile in kitefiles:
+#            filename1 = traindir+ '/' + txtfile
+#            #print(filename1)
+#            filename2 = kitedir + '/' + txtfile
+#            #print(filename2)
+#            os.system('cp %s %s' % (filename1, filename2)) 
+#            if os.path.isfile(filename2):
+#                print ('copy file success')
                                         
-#for jpgfile in kitefiles:
-#        txtfile = jpgfile[:-4] + '.txt'
-#        if txtfile in kitefiles:
-#                pass
-#        else:
-#                os.rename(kitedir+'/'+jpgfile,'./kite_new'+jpgfile)
-#                print(jpgfile)
+for jpgfile in kitefiles:
+        txtfile = jpgfile[:-4] + '.txt'
+        if txtfile in kitefiles:
+                pass
+        else:
+                os.rename(kitedir+'/'+jpgfile,'./kite_new/'+jpgfile)
+                print(jpgfile)
