@@ -44,7 +44,7 @@ for txtfile in trainfiles:
             #print(filename2)
             os.system('cp %s %s' % (filename1, filename2)) 
             if os.path.isfile(filename2):
-            print ('copy file success')
+                print ('copy file success')
                                         
 #for jpgfile in kitefiles:
 #        txtfile = jpgfile[:-4] + '.txt'
