@@ -35,7 +35,7 @@ kitefiles = os.listdir(kitedir)
 #        pass
 
 for txtfile in trainfiles:
-    if txtfile[-3:] = 'txt':
+    if txtfile[-3:] == 'txt':
         jpgfile = txtfile[:-4] + '.jpg'
         if jpgfile in kitefiles:
             filename1 = traindir+ '/' + txtfile
