@@ -26,7 +26,7 @@ def convert_annotation(image_id, list_file):
         list_file.write(" " + ",".join([str(a) for a in b]) + ',' + str(cls_id))
 
 for image_set in sets:
-    image_ids = open('main/%s.txt'%(image_set)).read().strip().split()
+    image_ids = open('ImageSets/Main/%s.txt'%(image_set)).read().strip().split()
     list_file = open('%s.txt'%(image_set), 'w')
     for image_id in image_ids:
         list_file.write('%s/%s.jpg'%(imagefilepath, image_id))

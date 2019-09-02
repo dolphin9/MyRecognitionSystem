@@ -1,0 +1,1 @@
+/media/dolphin9/文件/code/MyRecognitionSystem/dataset/voc/JPEGImages/907437d59ea95be1.jpg 48,87,940,254,0
