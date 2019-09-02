@@ -12,9 +12,9 @@ def deleteUnused(bboxfilepath, bboxes,images):
 
 trainval_percent = 0.1
 train_percent = 0.9
-bboxfilepath = 'voc_new'
-imagefilepath = 'image'
-txtsavepath = 'main'
+bboxfilepath = 'Annotation'
+imagefilepath = 'JPEGImages'
+txtsavepath = 'ImageSets'
 total_bbox = os.listdir(bboxfilepath)
 total_image = os.listdir(imagefilepath)
 
@@ -26,10 +26,10 @@ tv = int(num * trainval_percent)
 tr = int(tv * train_percent)
 trainval = random.sample(list, tv)
 train = random.sample(trainval, tr)
-ftrainval   = open('main/trainval.txt', 'w')
-ftest       = open('main/test.txt', 'w')
-ftrain      = open('main/train.txt', 'w')
-fval        = open('main/val.txt', 'w')
+ftrainval   = open('ImageSets/Main/trainval.txt', 'w')
+ftest       = open('ImageSets/Main/test.txt', 'w')
+ftrain      = open('ImageSets/Main/train.txt', 'w')
+fval        = open('ImageSets/Main/val.txt', 'w')
 for i in list:
     name = total_bbox[i][:-4] + '\n'
     if i in trainval:
