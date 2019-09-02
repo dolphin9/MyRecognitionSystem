@@ -1,0 +1,9 @@
+voc 数据集结构 https://blog.csdn.net/WK785456510/article/details/81565637
+1）Annotation中主要存放xml文件，每一个xml对应一张图像，并且每个xml中存放的是标记的各个目标的位置和类别信息，命名通常与对应的原始图像一样;
+
+2)ImageSets我们只需要用到Main文件夹，这里面存放的是一些文本文件，通常为train.txt、test.txt等，该文本文件里面的内容是需要用来训练或测试的图像的名字;
+
+3）JPEGImages文件夹中放我们已按统一规则命名好的原始图像。将新建的voc文件夹放到scripts/VOCdevkit/目录下，若无VOCdevkit文件夹则新建一个。
+————————————————
+版权声明：本文为CSDN博主「WK785456510」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/WK785456510/article/details/81565637
