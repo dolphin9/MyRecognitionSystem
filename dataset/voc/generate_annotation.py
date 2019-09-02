@@ -7,8 +7,8 @@ sets=['train', 'val', 'test']
 classes = ["kite", "balloon","bird-nest"]
 
 wd = os.getcwd()
-bboxfilepath = os.path.join(wd, 'voc_new') 
-imagefilepath = os.path.join(wd, 'image') 
+bboxfilepath = os.path.join(wd, 'Annotation') 
+imagefilepath = os.path.join(wd, 'JPEGImages') 
 
 def convert_annotation(image_id, list_file):
     in_file = open('%s/%s.xml'%(bboxfilepath, image_id))
