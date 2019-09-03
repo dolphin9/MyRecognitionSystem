@@ -1,0 +1,26 @@
+<annotation>
+	<folder>bird-nest selected</folder>
+	<filename>228.jpg</filename>
+	<path>C:\Users\limit\Desktop\bird-nest selected\228.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>816</width>
+		<height>612</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>bird-nest</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>41</xmin>
+			<ymin>227</ymin>
+			<xmax>811</xmax>
+			<ymax>605</ymax>
+		</bndbox>
+	</object>
+</annotation>

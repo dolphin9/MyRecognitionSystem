@@ -1,0 +1,26 @@
+<annotation>
+	<folder>bird-image</folder>
+	<filename>90.jpg</filename>
+	<path>D:\bird-image\90.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>300</width>
+		<height>400</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>bird-nest</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>123</xmin>
+			<ymin>66</ymin>
+			<xmax>161</xmax>
+			<ymax>90</ymax>
+		</bndbox>
+	</object>
+</annotation>
