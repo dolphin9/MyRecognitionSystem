@@ -1,9 +1,0 @@
-/media/dolphin9/文件/code/MyRecognitionSystem/dataset/voc/JPEGImages/7a916c39965f1f23.jpg 174,133,428,248,0 30,250,140,277,0 211,289,241,323,0 246,332,286,356,0 238,376,261,394,0 274,391,288,413,0 214,439,340,497,0 212,481,390,562,0
-/media/dolphin9/文件/code/MyRecognitionSystem/dataset/voc/JPEGImages/1041.jpg 243,60,309,147,0
-/media/dolphin9/文件/code/MyRecognitionSystem/dataset/voc/JPEGImages/42f0f788afccb386.jpg 430,22,853,170,0
-/media/dolphin9/文件/code/MyRecognitionSystem/dataset/voc/JPEGImages/482d26ba5e369f53.jpg 198,60,275,113,0 333,30,564,202,0 256,205,523,553,0 103,604,188,736,0 82,552,133,588,0 318,561,386,652,0 397,637,543,732,0 222,437,270,545,0 265,477,313,504,0 662,208,725,265,0 965,281,1018,342,0 428,453,767,630,0
-/media/dolphin9/文件/code/MyRecognitionSystem/dataset/voc/JPEGImages/1026.jpg 148,80,320,266,0
-/media/dolphin9/文件/code/MyRecognitionSystem/dataset/voc/JPEGImages/b7754acd42fdd8a6.jpg 278,172,489,456,0
-/media/dolphin9/文件/code/MyRecognitionSystem/dataset/voc/JPEGImages/da7dca2d165dbecc.jpg 401,201,632,482,0
-/media/dolphin9/文件/code/MyRecognitionSystem/dataset/voc/JPEGImages/eb5b9181545a1641.jpg 325,172,386,212,0
-/media/dolphin9/文件/code/MyRecognitionSystem/dataset/voc/JPEGImages/f6bfc606e91063a4.jpg 96,1,916,678,0
