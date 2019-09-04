@@ -1,0 +1,26 @@
+<annotation>
+	<folder>气球</folder>
+	<filename>34.jpg</filename>
+	<path>/home/dolphin9/code/MyRecognitionSystem/dataset/newfile/气球/34.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>265</width>
+		<height>400</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>balloon</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>91</xmin>
+			<ymin>106</ymin>
+			<xmax>163</xmax>
+			<ymax>165</ymax>
+		</bndbox>
+	</object>
+</annotation>

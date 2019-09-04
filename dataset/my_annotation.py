@@ -30,6 +30,9 @@ def convert_annotation_xml(image_id, list_file):
 def convert_annotation_txt(image_id, list_file):
     in_file = open('%s/%s.txt'%(bboxfilepath, image_id))
     in_image= cv2.imread('%s/%s.jpg'%(imagefilepath, image_id))
+    if in_image is None:
+        print("no such file %s.jpg." % image_id)
+        return
     height, width, _ = in_image.shape
 
     for line in in_file.readlines():
@@ -53,8 +56,10 @@ def convert_annotation_txt(image_id, list_file):
 def convert_annotation(image_id, list_file):
     if os.path.isfile('%s/%s.xml'%(bboxfilepath, image_id)):
         convert_annotation_xml(image_id, list_file)
-    else:
+    elif os.path.isfile('%s/%s.txt'%(bboxfilepath, image_id)):
         convert_annotation_txt(image_id, list_file)
+    else:
+        print("no such file %s.txt." % image_id)
 
 
 for image_set in sets:

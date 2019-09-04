@@ -1,6 +1,8 @@
+from PIL import ImageFont
 import xml.etree.ElementTree as ET
 import cv2
 import os
+import numpy as np
 
 classes = ["kite", "balloon","bird-nest"]
 
@@ -36,14 +38,27 @@ def draw_txt(name):
     img_file = "%s/%s.jpg" % (imagefilepath, name)
     lbl_file = "%s/%s.txt" % (bboxfilepath, name)
     img = cv2.imread(img_file)
+    if img is None:
+        print("no such file %s.jpg" % name)
+        return
     h, w, _ = img.shape
     # print(h, w)
+        
+    # font = ImageFont.truetype(font='font/FiraMono-Medium.otf',
+    #             size=np.floor(3e-2 * img.shape[1] + 0.5).astype('int32'))
+    fontFace = cv2.FONT_HERSHEY_PLAIN
+    fontScale = 1.0
+    thickness = 1
+
     with open(lbl_file, "r") as f:
         for line in f.readlines():
-            # xmin, ymin, xmax, ymax = map(float, line.split(' ')[1:])
-            # yctr, xctr, ywid, xwid = map(float, line.split(' ')[1:])
-            xctr, yctr, xwid, ywid = map(float, line.split(' ')[1:])
-            # ywid, xwid, yctr, xctr = map(float, line.split(' ')[1:])
+            groups = line.split(' ')
+            cls_id = int(groups[0])
+            label = classes[cls_id]
+            # xmin, ymin, xmax, ymax = map(float, groups[1:])
+            # yctr, xctr, ywid, xwid = map(float, groups[1:])
+            xctr, yctr, xwid, ywid = map(float, groups[1:])
+            # ywid, xwid, yctr, xctr = map(float, groups[1:])
             ymin = yctr - ywid/2
             ymax = yctr + ywid/2
             xmin = xctr - xwid/2
@@ -54,15 +69,27 @@ def draw_txt(name):
             ymin = int(ymin * h)
             xmax = int(xmax * w)
             ymax = int(ymax * h)
+
+            label_size = cv2.getTextSize(label, fontFace, fontScale, thickness)
+            top, left, bottom, right = ymin, xmin, ymax, xmax
+            if top - label_size[1] >= 0:
+                text_origin = (left, top - label_size[1])
+            else:
+                text_origin = (left, top + 1)
+
             img = cv2.rectangle(img, (xmin, ymin), (xmax, ymax), (1, 1, 0, 0), 2)
+            img = cv2.putText(img, label, text_origin, color=(128, 128, 128),
+                    fontFace=fontFace, fontScale=fontScale)
 
     cv2.imwrite("%s/%s.jpg" % (imagesavepath, name), img)
 
 def draw(name):
     if os.path.isfile('%s/%s.xml'%(bboxfilepath, name)):
         draw_xml(name)
-    else:
+    elif os.path.isfile('%s/%s.txt'%(bboxfilepath, name)):
         draw_txt(name)
+    else:
+        print("no such file %s.txt" % name)
 
 with open("main/train.txt", "r") as f:
     for name in f.readlines():

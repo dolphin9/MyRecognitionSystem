@@ -1,0 +1,26 @@
+<annotation>
+	<folder>气球</folder>
+	<filename>2.jpg</filename>
+	<path>/home/dolphin9/code/Yolo3/myDataset/Saved Pictures/气球/2.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>792</width>
+		<height>593</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>balloon</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>421</xmin>
+			<ymin>249</ymin>
+			<xmax>458</xmax>
+			<ymax>291</ymax>
+		</bndbox>
+	</object>
+</annotation>

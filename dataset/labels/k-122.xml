@@ -1,0 +1,38 @@
+<annotation>
+	<folder>风筝</folder>
+	<filename>122.jpg</filename>
+	<path>/home/dolphin9/code/Yolo3/myDataset/Saved Pictures/风筝/122.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1200</width>
+		<height>771</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>kite</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>475</xmin>
+			<ymin>374</ymin>
+			<xmax>653</xmax>
+			<ymax>540</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>kite</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>95</xmin>
+			<ymin>673</ymin>
+			<xmax>228</xmax>
+			<ymax>771</ymax>
+		</bndbox>
+	</object>
+</annotation>
